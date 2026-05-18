@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import DataBackdrop from './DataBackdrop'
 
 export default function Hero() {
   const contentRef = useRef(null)
@@ -18,6 +19,8 @@ export default function Hero() {
 
   return (
     <div className="hero-shell">
+      <DataBackdrop />
+
       <section id="hero" className="hero-section">
         <div ref={contentRef} className="hero-content">
           <div className="hero-badge">
@@ -58,13 +61,6 @@ export default function Hero() {
         </div>
       </section>
 
-      {[600, 420, 240].map((size, i) => (
-        <div
-          key={size}
-          className={`hero-ring hero-ring--${i + 1}`}
-          style={{ width: `${size}px`, height: `${size}px` }}
-        />
-      ))}
     </div>
   )
 }

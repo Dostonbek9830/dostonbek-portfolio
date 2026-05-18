@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
 
 const skills = [
-  { name: 'Python',     icon: 'https://cdn.simpleicons.org/python',                  bg: '#1a1a2e' },
-  { name: 'Pandas',     icon: 'https://cdn.simpleicons.org/pandas/E70488',            bg: '#1a1a2e' },
-  { name: 'SQL',        icon: 'https://cdn.simpleicons.org/postgresql/336791',        bg: '#1a1a2e' },
+  { name: 'Python',     icon: '/logos/python.svg',                                    bg: '#1a1a2e' },
+  { name: 'Pandas',     icon: '/logos/pandas.svg',                                    bg: '#1a1a2e' },
+  { name: 'SQL',        icon: '/logos/sql.svg',                                       bg: '#1a1a2e' },
   { name: 'Power BI',   icon: '/logos/power-bi.svg',                                  bg: '#1a1a2e' },
   { name: 'Tableau',    icon: '/logos/tableau.svg',                                   bg: '#1a1a2e' },
-  { name: 'Qlik Sense', icon: 'https://cdn.simpleicons.org/qlik/009845',              bg: '#1a1a2e' },
+  { name: 'Qlik Sense', icon: '/logos/qlik-sense.svg',                                bg: '#1a1a2e' },
   { name: 'Matplotlib', icon: '/logos/matplotlib.svg',                                bg: '#1a1a2e' },
   { name: 'Excel',      icon: '/logos/excel.svg',                                     bg: '#1a1a2e' },
 ]
