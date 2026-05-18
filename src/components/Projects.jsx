@@ -24,11 +24,7 @@ export default function Projects() {
         <p className="section-label">Portfolio</p>
         <h2 className="section-heading">Featured Projects</h2>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-          gap: '1.5rem', marginTop: '2.5rem'
-        }}>
+        <div className="projects-grid">
           {projects.map((p, i) => (
             <ProjectCard key={i} project={p} />
           ))}
@@ -36,7 +32,7 @@ export default function Projects() {
       </div>
 
       <style>{`
-        .project-card { background: rgba(10,22,40,0.8); border: 1px solid rgba(55,138,221,0.15); border-radius: 16px; padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem; transition: border-color 0.2s, transform 0.2s; }
+        .project-card { background: rgba(10,22,40,0.8); border: 1px solid rgba(55,138,221,0.15); border-radius: 8px; padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem; transition: border-color 0.2s, transform 0.2s; }
         .project-card:hover { border-color: rgba(55,138,221,0.5); transform: translateY(-3px); }
         .project-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #1D9E75; background: rgba(29,158,117,0.1); border: 1px solid rgba(29,158,117,0.2); border-radius: 100px; padding: 3px 10px; width: fit-content; }
         .project-title { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 600; color: #e8f0f8; line-height: 1.3; }

@@ -28,16 +28,12 @@ export default function Skills() {
       <div className="section-wrap">
         <p className="section-label">Skills & Tools</p>
         <h2 className="section-heading">What I work with</h2>
-        <p style={{ color: 'rgba(232,240,248,0.5)', maxWidth: '520px', fontSize: '0.95rem', fontWeight: 300 }}>
+        <p className="section-copy">
           Currently expanding expertise in analytics, reporting, and business analysis
           with a strong interest in business intelligence and data-driven decision-making.
         </p>
 
-        <div ref={ref} className="fade-up" style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))',
-          gap: '12px', marginTop: '2.5rem'
-        }}>
+        <div ref={ref} className="skills-grid fade-up">
           {skills.map(skill => (
             <div key={skill.name} className="skill-chip">
               <div style={{

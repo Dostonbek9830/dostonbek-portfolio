@@ -8,7 +8,7 @@ const links = [
 export default function Contact() {
   return (
     <section id="contact" style={{ textAlign: 'center' }}>
-      <div style={{ maxWidth: '600px', margin: '0 auto', padding: '6rem 4rem' }}>
+      <div className="contact-wrap">
         <p className="section-label">Contact</p>
         <h2 className="section-heading">Let's connect</h2>
         <p style={{
