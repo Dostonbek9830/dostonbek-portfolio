@@ -4,11 +4,11 @@ const skills = [
   { name: 'Python',     icon: 'https://cdn.simpleicons.org/python',                  bg: '#1a1a2e' },
   { name: 'Pandas',     icon: 'https://cdn.simpleicons.org/pandas/E70488',            bg: '#1a1a2e' },
   { name: 'SQL',        icon: 'https://cdn.simpleicons.org/postgresql/336791',        bg: '#1a1a2e' },
-  { name: 'Power BI',   icon: 'https://cdn.simpleicons.org/powerbi/F2C811',           bg: '#1a1a2e' },
-  { name: 'Tableau',    icon: 'https://cdn.simpleicons.org/tableau/E8762D',           bg: '#1a1a2e' },
+  { name: 'Power BI',   icon: '/logos/power-bi.svg',                                  bg: '#1a1a2e' },
+  { name: 'Tableau',    icon: '/logos/tableau.svg',                                   bg: '#1a1a2e' },
   { name: 'Qlik Sense', icon: 'https://cdn.simpleicons.org/qlik/009845',              bg: '#1a1a2e' },
-  { name: 'Matplotlib', icon: 'https://cdn.simpleicons.org/matplotlib/11557C',        bg: '#1a1a2e' },
-  { name: 'Excel',      icon: 'https://cdn.simpleicons.org/microsoftexcel/217346',    bg: '#1a1a2e' },
+  { name: 'Matplotlib', icon: '/logos/matplotlib.svg',                                bg: '#1a1a2e' },
+  { name: 'Excel',      icon: '/logos/excel.svg',                                     bg: '#1a1a2e' },
 ]
 
 export default function Skills() {
@@ -46,8 +46,7 @@ export default function Skills() {
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  width="30" height="30"
-                  style={{ objectFit: 'contain' }}
+                  className="skill-logo"
                   onError={e => { e.target.style.display = 'none' }}
                 />
               </div>
@@ -62,6 +61,7 @@ export default function Skills() {
         .fade-up.visible { opacity: 1; transform: none; }
         .skill-chip { background: rgba(55,138,221,0.07); border: 1px solid rgba(55,138,221,0.18); border-radius: 10px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 10px; transition: background 0.2s, border-color 0.2s, transform 0.15s; cursor: default; }
         .skill-chip:hover { background: rgba(55,138,221,0.14); border-color: rgba(55,138,221,0.4); transform: translateY(-2px); }
+        .skill-logo { width: 32px; height: 32px; object-fit: contain; }
         .skill-name { font-size: 0.85rem; font-weight: 500; color: rgba(232,240,248,0.85); }
       `}</style>
     </section>
