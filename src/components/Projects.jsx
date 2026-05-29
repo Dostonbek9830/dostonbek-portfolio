@@ -8,12 +8,12 @@ const projects = [
     live: true
   },
   {
-    tag: 'Coming Soon',
-    title: 'Next Project',
+    tag: 'Tableau · Banking Analytics  ',
+    title: 'Banking Analytics',
     desc: 'More analytics projects coming soon...',
-    tools: [],
-    link: null,
-    live: false
+    tools: ['Tableau', 'Python', 'Pandas','Excel'],
+    link: 'https://public.tableau.com/app/profile/dostonbek.yokubov/viz/BankingAnalytics_17800850011500/LoanRiskAnalytics?publish=yes',
+    live: true
   }
 ]
 
