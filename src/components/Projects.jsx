@@ -10,7 +10,7 @@ const projects = [
   {
     tag: 'Tableau · Banking Analytics  ',
     title: 'Banking Analytics',
-    desc: 'More analytics projects coming soon...',
+    desc: 'End-to-end banking analytics solution built using Python, Pandas, and Tableau. The goal of the project was to simulate a real-world retail banking environment by generating, cleaning, transforming, analyzing, and visualizing banking data for executive decision-making.',
     tools: ['Tableau', 'Python', 'Pandas','Excel'],
     link: 'https://public.tableau.com/app/profile/dostonbek.yokubov/viz/BankingAnalytics_17800850011500/LoanRiskAnalytics?publish=yes',
     live: true
